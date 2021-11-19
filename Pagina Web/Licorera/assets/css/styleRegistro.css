@@ -1,0 +1,15 @@
+body{
+    background: rgb(219, 226, 226);
+}
+
+#map { 
+    width: 500px;
+    height: 500px;
+    box-shadow: 5px 5px 5px #888;
+ }
+ 
+.row{
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 12px 12px 22px grey;
+}
