@@ -24,25 +24,26 @@
         $fila = sqlsrv_fetch_object( $ejecutar);
 
         if($fila->Codigo == 0){
-            /*header("location: ../PortalAdministrador/hoteles.php");
+            header("location: ../PortalCliente/infopersonal.php");
             exit;
-            */
+            
+            /*
             echo '
             <script>
                 alert("Usuario encontrado");
-            </script>';
+            </script>';*/
         }else if($fila->Codigo == 1){
             echo '
             <script>
                 alert("Usuario inexistente, verificar datos ingresados");
-                window.location = "../loginAdministrador.php";
+                window.location = "../PortalCliente/infopersonal.php";
             </script>';
 
         }else{
             echo '
             <script>
                 alert("Error al analizar el usuario");
-                window.location = "../loginAdministrador.php";
+                window.location = "../index.php";
             </script>';
         }
     }
